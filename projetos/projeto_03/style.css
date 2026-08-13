@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+}
+
+.container {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgb(255, 151, 167);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.btnFrase {
+    background-color: rgb(240, 54, 85);
+    color: aliceblue;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btnFrase:hover {
+    background-color: rgb(253, 100, 126);
+}
+
+.h1 {
+    font-weight: 700;
+}
