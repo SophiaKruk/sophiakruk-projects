@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0A1B2D;
+}
+
+header {
+    background-color: #081728;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 120px;
+    color: white;
+    border: 3px solid #000612;
+    gap: 20px;
+}
+
+
+
+.acerteSenha {
+    width: 400px;
+    margin: 40px auto;
+    background-color: #081625;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 15px;
+    border: 10px;
+    border-radius: 20px;
+}
+
+.quadrado{
+    width: 70px;
+    height: 70px;
+    background-color: #06111F;
+    border: 3px solid #2B4056;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#FFFFFF ;
+}
+.inputText{
+    width: 410px;
+    height: 44px;
+    text-align: center;
+    background-color: #06111F;
+    border: 3px solid #2B4056;
+    color: #5D5D5D;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 7px;
+}
+
+.btnEnviar{
+    width: 410px;
+    height: 33px;
+    text-align: center;
+    background-color:#2B4056;
+    border: 3px solid #06111F;
+    color: #081625;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+.certo{
+    background-color: #238C49;
+}
+
+.erro {
+    background-color: #06111F;
+}
+
+.meioCerto{
+    background-color: #CB9D21;
+}
+
+.SYbody-01 {
+    background-image: url(./assets/img-06.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.SYdiv-01 {
+    max-width: 600px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 30px;
+    left: 600px;
+}
+
+.h1 {
+    margin-top: 188px;
+    color: #00C0DD;
+    font-weight: bold;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.SYimg-01 {
+    position: relative;
+}
+
+.SYimg-08-01 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+    position: absolute;
+    left: 1295px;
+    top: 10px;
+}
+
+.SYimg-08-01:hover {
+    background-image: url(./assets/img-09.png);
+}
+
+.SYbody-02 {
+    background-image: url(./assets/img-07.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.SYdiv-02 {
+    max-width: 600px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 30px;
+    left: 600px;
+}
+
+.h1-02 {
+    margin-top: 188px;
+    color: #DE0000;
+    font-weight: bold;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.SYimg-02 {
+    position: relative;
+}
+
+.SYimg-08-02 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+    position: absolute;
+    left: 1295px;
+    top: 10px;
+}
+
+.SYimg-08-02:hover {
+    background-image: url(./assets/img-09.png);
+}
