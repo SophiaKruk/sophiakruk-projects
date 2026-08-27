@@ -101,10 +101,10 @@ function verificar (){
     input.value = ""
 }
 
-const modalVitoria = document.querySelector("#SYmodalVitoria")
-const modalDerrota = document.querySelector("#SYmodalDerrota")
-const btnFecharVitoria = document.querySelector("#SYmodalVitoria.SYbtnFechar" )
-const btnFecharDerrota = document.querySelector("#SYmodalDerrota .SYbtnReiniciar2")
+const SYmodalVitoria = document.querySelector("#SYmodalVitoria")
+const SYmodalDerrota = document.querySelector("#SYmodalDerrota")
+const SYbtnFechar = document.querySelector("#SYmodalVitoria.SYbtnFechar")
+const SYbtnFechar2 = document.querySelector("#SYmodalDerrota .SYbtnReiniciar2")
 
 btnEnviar.addEventListener("click", function() {
     verificar()
@@ -173,13 +173,13 @@ function verificar() {
 
     if (texto === palavraSorteada) {
 
-        modalVitoria.classList.add("is-active")
+        SYmodalVitoria.classList.add("is-active")
 
         return
 
     } else if (atual === 6) {
 
-        modalDerrota.classList.add("is-active")
+        SYmodalDerrota.classList.add("is-active")
 
         return
 
@@ -187,15 +187,15 @@ function verificar() {
 
 }
 
-btnFecharVitoria.addEventListener("click", function() {
+SYbtnFechar.addEventListener("click", function() {
 
-    modalVitoria.classList.remove("is-active")
+    SYmodalVitoria.classList.remove("is-active")
 
 })
 
-btnFecharDerrota.addEventListener("click", function() {
+SYbtnFechar2.addEventListener("click", function() {
 
-    modalDerrota.classList.remove("is-active")
+    SYmodalDerrota.classList.remove("is-active")
 
 })
 
@@ -233,8 +233,51 @@ function reiniciarJogo() {
 
     }
 
-    modalVitoria.classList.remove("is-active")
+    SYmodalVitoria.classList.remove("is-active")
 
-    modalDerrota.classList.remove("is-active")
+    SYmodalDerrota.classList.remove("is-active")
 
 }
+
+SYbtnFechar.addEventListener("click", function () {
+    SYmodalVitoria.classList.remove("is-active")
+})
+
+SYbtnFechar2.addEventListener("click", function () {
+    SYmodalDerrota.classList.remove("is-active")
+})
+
+btnReiniciar.addEventListener("click", reiniciarJogo)
+
+function reiniciarJogo() {
+    posicaoLetra = 0
+    atual = 0
+    numero.textContent = "0"
+    inputText.value = ""
+
+    sortearFrase()
+
+    let quadrado = document.querySelectorAll(".quadrado");
+    for (let i = 0; i < 30; i++) {
+        quadrado[i].textContent = "";
+        quadrado[i].classList.remove("certo", "erro", "meioCerto");
+    }
+
+    SYmodalVitoria.classList.remove("is-active")
+    SYmodalDerrota.classList.remove("is-active")
+}
+
+SYbtnFechar.addEventListener("click", function() {
+    reiniciarJogo()
+})
+
+SYbtnFechar2.addEventListener("click", function() {
+    reiniciarJogo()
+})
+
+
+//Duplicações em massa: A função verificar(), a função reiniciarJogo() e a maioria dos eventos (addEventListener) estão declarados 2 a 3 vezes no mesmo arquivo. Isso gera conflitos e faz cada tentativa contar em dobro.
+
+//Erro de Seletor (Uncaught TypeError): A linha querySelector("#SYmodalVitoria.SYbtnFechar") está sem o espaço entre o ID e a classe. O navegador tenta achar um elemento com o ID e a classe juntos, não encontra (retorna null), e travará o JavaScript na hora de tentar adicionar o ouvinte de clique.
+
+//Looping Infinito do Quadrado: Ao reiniciar, se a função termo() não for limpa antes, a tela acumulará blocos infinitamente a cada partida.
