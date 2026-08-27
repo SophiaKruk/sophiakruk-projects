@@ -14,7 +14,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 10px 120px;
+    padding: 6px 20px;
     color: white;
     border: 3px solid #000612;
     gap: 20px;
@@ -88,98 +88,238 @@ header {
     background-color: #CB9D21;
 }
 
-.SYbody-01 {
-    background-image: url(./assets/img-06.png);
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
-}
 
-.SYdiv-01 {
-    max-width: 600px;
-    display: flex;
+
+.tentativa {
+    margin: 0px auto;
+    background-color: #0A1B2D;
+    border: 3px solid #051222;
+    border-radius: 10px;
+    width: 240px;
+    height: 143px;
     text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    position: absolute;
-    top: 30px;
-    left: 600px;
-}
-
-.h1 {
-    margin-top: 188px;
-    color: #00C0DD;
     font-weight: bold;
-    font-size: 38px;
+    color: #9FB5C9;
+    font-size: 25px;
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 700;
-}
-
-.SYimg-01 {
-    position: relative;
-}
-
-.SYimg-08-01 {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-items: flex-end;
-    position: absolute;
-    left: 1295px;
-    top: 10px;
-}
-
-.SYimg-08-01:hover {
-    background-image: url(./assets/img-09.png);
-}
-
-.SYbody-02 {
-    background-image: url(./assets/img-07.png);
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
-}
-
-.SYdiv-02 {
-    max-width: 600px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    position: absolute;
-    top: 30px;
-    left: 600px;
+    justify-content: center;
+    gap: 0px;
 }
 
-.h1-02 {
-    margin-top: 188px;
-    color: #DE0000;
+.among{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 400px;
+    text-align: left;
+}
+
+.among img{
+    height: 180px;
+    width: auto;
+    position: static;
+}
+
+
+.among p {
+    color: #9FB5C9;
+    width: 100%;
+    text-align: right;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.num {
+    color: #238E4B;
     font-weight: bold;
-    font-size: 38px;
+    font-size: 54px;
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 700;
 }
 
-.SYimg-02 {
-    position: relative;
-}
 
-.SYimg-08-02 {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-items: flex-end;
+.btnReiniciar{
     position: absolute;
-    left: 1295px;
-    top: 10px;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-image: url(assets/img-02.png);
 }
 
-.SYimg-08-02:hover {
-    background-image: url(./assets/img-09.png);
+
+
+.btnReiniciar:hover {
+    background-image: url(assets/img-03.png);
+}
+
+.SYmodal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img-04.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.SYmodal.is-active {
+    display: flex;
+}
+
+.SYconteiter1 {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background-image: url(./assets/img-04.png);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.SYconteiter2 {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background-image: url(./assets/img-04.png);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.SYconteiter1 h1,
+.SYconteiter2 h1 {
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+}
+
+.SYconteiter1 > img,
+.SYconteiter2 > img {
+    width: 250px;
+    margin-top: 40px;
+}
+
+.SYbtnFechar,
+.SYbtnReiniciar2 {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.SYbtnFechar img,
+.SYbtnReiniciar2 img {
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 10px;
+    }
+
+
+    .among {
+        justify-content: center;
+    }
+
+
+    .among img {
+        height: 120px;
+    }
+
+
+    .tentativa {
+        width: 180px;
+
+        height: 100px;
+
+        font-size: 18px;
+    }
+
+
+    .num {
+        font-size: 40px;
+    }
+
+
+    .among p {
+        font-size: 14px;
+    }
+
+
+    .acerteSenha {
+        width: 95%;
+    }
+
+
+    .quadrado {
+        width: 55px;
+
+        height: 55px;
+
+        font-size: 28px;
+    }
+
+
+    .inputText,
+    .btnEnviar {
+        width: 100%;
+    }
+
+
+    .SYconteiter1,
+    .SYconteiter2 {
+
+        width: 90%;
+
+        height: 500px;
+
+    }
+
+
+    .SYconteiter1 h1,
+    .SYconteiter2 h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .SYconteiter1 > img,
+    .SYconteiter2 > img {
+
+        width: 200px;
+
+    }
+
 }

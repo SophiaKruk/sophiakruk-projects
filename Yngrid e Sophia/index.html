@@ -8,37 +8,52 @@
 </head>
 <body>
     <header>
-        <img src="assets/img-02.png" alt="">
-        <button class="btnResetar"><img src="assets/img-04.png" alt=""></button>
+        <div class="among">
+            <img src="assets/img-01.png"  alt="">
+            <div class="tentativa">tentativas  <h1><span class="num">0</span>/6</h1></div>
+            <p>Adivinhe a palavra secreta de 5 letras.</p>
+        </div>
+
+        <button class="btnReiniciar"></button>
     </header>
+
+
+
     <div class="acerteSenha">
         <input type="text" class="inputText" placeholder="Acerte a senha">
         <button class="btnEnviar">Enviar</button>
     </div>
-    <div>
-        <button class="btnAbrir"></button>
-    </div>
-    <div class="modal victory">
-        <div class="SYbody-01">
-            <button class="SYbutton-victory"><img src="./assets/img-08.png" class="SYimg-08-01" alt=""></button>
-            <div class="container-01">
-                <div class="SYdiv-01">
-                    <h1 class="h1">Vitória</h1>
-                    <img src="./assets/img-02.png" class="SYamong-01" alt="">
-                </div>
-            </div>
+<div class="SYmodal" id="SYmodalVitoria">
+
+        <div class="SYconteiter1">
+
+            <h1>Vitória</h1>
+
+            <img src="./assets/img-01.png" alt="">
+
+            <button class="SYbtnFechar">
+                <img src="./assets/img-06.png" alt="Fechar">
+            </button>
+
         </div>
-    </div>
-    <div class="modal derrota">
-        <div class="SYbody-02">
-            <button class="SYbutton-derrota"><img src="./assets/img-08.png" class="SYimg-08-02" alt=""></button>
-            <div class="container-02">
-                <h1 class="h1-02">Derrota</h1>
-                <img src="./assets/img-02.png" class="SYamong-02" alt="">
-            </div>
-        </div>
+
     </div>
 
+    <div class="SYmodal" id="SYmodalDerrota">
+
+        <div class="SYconteiter2">
+
+            <h1>Derrota</h1>
+
+            <img src="./assets/img-01.png" alt="">
+
+            <button class="SYbtnReiniciar2">
+                <img src="./assets/img-06.png" alt="Fechar">
+            </button>
+
+        </div>
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
