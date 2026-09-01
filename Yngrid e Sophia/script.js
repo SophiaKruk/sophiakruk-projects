@@ -1,23 +1,23 @@
 function termo() {
 
-    const acerteSenha = document.querySelector(".acerteSenha")
+    const SYacerteSenha = document.querySelector(".SYacerteSenha")
 
     for (let c = 1; c <= 6; c++) {
 
         for (let i = 1; i <= 5; i++) {
 
-            let quadrado = document.createElement("div")
+            let SYquadrado = document.createElement("div")
 
-            quadrado.classList.add("quadrado")
+            SYquadrado.classList.add("SYquadrado")
 
-            acerteSenha.appendChild(quadrado)
+            SYacerteSenha.appendChild(SYquadrado)
         }
     }
 }
 
 termo()
 
-const arrayPalavras = [
+const SYarrayPalavras = [
     "jogos",
     "porta",
     "amora",
@@ -29,37 +29,37 @@ const arrayPalavras = [
     "ferro"
 ]
 
-let palavraSorteada
+let SYpalavraSorteada
 
-function sortearFrase() {
+function SYsortearFrase() {
 
-    let indice =
+    let SYindice =
         Math.floor(
             Math.random() *
-            arrayPalavras.length
+            SYarrayPalavras.length
         )
 
-    palavraSorteada = arrayPalavras[indice]
+    SYpalavraSorteada = SYarrayPalavras[SYindice]
 
 }
 
-sortearFrase()
+SYsortearFrase()
 
-console.log(palavraSorteada)
+console.log(SYpalavraSorteada)
 
-let btnEnviar = document.querySelector(".btnEnviar")
+let SYbtnEnviar = document.querySelector(".SYbtnEnviar")
 
-let inputText = document.querySelector(".inputText")
+let SYinputText = document.querySelector(".SYinputText")
 
-let numero = document.querySelector(".num")
+let SYnumero = document.querySelector(".SYnum")
 
-const btnReiniciar = document.querySelector(".btnReiniciar")
+const SYbtnReiniciar = document.querySelector(".SYbtnReiniciar")
 
-inputText.maxLength = 5
+SYinputText.maxLength = 5
 
-let posicaoLetra = 0
+let SYposicaoLetra = 0
 
-let atual = 0
+let SYatual = 0
 
 
 const SYmodalVitoria = document.querySelector("#SYmodalVitoria")
@@ -72,12 +72,12 @@ const SYbtnFechar = document.querySelector("#SYmodalVitoria .SYbtnFechar")
 const SYbtnFechar2 = document.querySelector("#SYmodalDerrota .SYbtnFechar2")
 
 
-btnEnviar.addEventListener("click", function() {
+SYbtnEnviar.addEventListener("click", function() {
         verificar()
     }
 )
 
-inputText.addEventListener("keydown", function(event) {
+SYinputText.addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             verificar()
         }
@@ -85,61 +85,61 @@ inputText.addEventListener("keydown", function(event) {
 )
 
 function verificar() {
-    let input =
-        document.querySelector(".inputText")
+    let SYinput =
+        document.querySelector(".SYinputText")
 
-    let texto =
-        input.value.trim().toLowerCase()
+    let SYtexto =
+        SYinput.value.trim().toLowerCase()
 
-    if (texto.length < 5) {
+    if (SYtexto.length < 5) {
         return
     }
 
 
-    let quadrado = document.querySelectorAll(".quadrado")
+    let SYquadrado = document.querySelectorAll(".SYquadrado")
 
     for (let i = 0; i < 5; i++) {
-        let num =
-            quadrado[posicaoLetra]
+        let SYnum =
+            SYquadrado[SYposicaoLetra]
 
-        num.classList.remove(
-            "certo",
-            "erro",
-            "meioCerto"
+        SYnum.classList.remove(
+            "SYcerto",
+            "SYerro",
+            "SYmeioCerto"
         )
 
-        num.textContent = texto[i]
+        SYnum.textContent = SYtexto[i]
 
-        if (texto[i] == palavraSorteada[i]) {
-            num.classList.add("certo")
+        if (SYtexto[i] == SYpalavraSorteada[i]) {
+            SYnum.classList.add("SYcerto")
         }else if (
-            texto[i] == palavraSorteada[0] ||
-            texto[i] == palavraSorteada[1] ||
-            texto[i] == palavraSorteada[2] ||
-            texto[i] == palavraSorteada[3] ||
-            texto[i] == palavraSorteada[4]) {
-            num.classList.add("meioCerto")
+            SYtexto[i] == SYpalavraSorteada[0] ||
+            SYtexto[i] == SYpalavraSorteada[1] ||
+            SYtexto[i] == SYpalavraSorteada[2] ||
+            SYtexto[i] == SYpalavraSorteada[3] ||
+            SYtexto[i] == SYpalavraSorteada[4]) {
+            SYnum.classList.add("SYmeioCerto")
         }else {
-            num.classList.add("erro")
+            SYnum.classList.add("SYerro")
         }
-        posicaoLetra++
+        SYposicaoLetra++
     }
 
-    atual++
+    SYatual++
 
-    numero.textContent =
-        atual + ""
+    SYnumero.textContent =
+        SYatual + ""
 
 
-    input.value = ""
+    SYinput.value = ""
 
-    if (texto === palavraSorteada) {
+    if (SYtexto === SYpalavraSorteada) {
 
         SYmodalVitoria.classList.add("is-active")
         return
 
     } 
-    if (atual === 6) {
+    if (SYatual === 6) {
         SYmodalDerrota.classList.add("is-active")
         return
     }
@@ -154,33 +154,33 @@ SYbtnFechar2.addEventListener("click", function() {
     }
 )
 
-btnReiniciar.addEventListener("click", function() {
+SYbtnReiniciar.addEventListener("click", function() {
         reiniciarJogo()
     }
 )
 
 function reiniciarJogo() {
 
-    atual = 0
+    SYatual = 0
 
-    numero.textContent = "0"
+    SYnumero.textContent = "0"
 
-    posicaoLetra = 0
+    SYposicaoLetra = 0
 
-    inputText.value = ""
+    SYinputText.value = ""
 
-    sortearFrase()
+    SYsortearFrase()
 
-    let quadrado = document.querySelectorAll(".quadrado")
+    let SYquadrado = document.querySelectorAll(".SYquadrado")
 
     for (let i = 0; i < 30; i++) {
 
-        quadrado[i].textContent = ""
+        SYquadrado[i].textContent = ""
 
-        quadrado[i].classList.remove(
-            "certo",
-            "erro",
-            "meioCerto"
+        SYquadrado[i].classList.remove(
+            "SYcerto",
+            "SYerro",
+            "SYmeioCerto"
         )
     }
 

@@ -22,7 +22,7 @@ header {
 
 
 
-.acerteSenha {
+.SYacerteSenha {
     width: 400px;
     margin: 40px auto;
     background-color: #081625;
@@ -36,7 +36,7 @@ header {
     border-radius: 20px;
 }
 
-.quadrado{
+.SYquadrado{
     width: 70px;
     height: 70px;
     background-color: #06111F;
@@ -52,7 +52,7 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:#FFFFFF ;
 }
-.inputText{
+.SYinputText{
     width: 410px;
     height: 44px;
     text-align: center;
@@ -64,7 +64,7 @@ header {
     border-radius: 7px;
 }
 
-.btnEnviar{
+.SYbtnEnviar{
     width: 410px;
     height: 33px;
     text-align: center;
@@ -76,21 +76,21 @@ header {
     border-radius: 7px;
 }
 
-.certo{
+.SYcerto{
     background-color: #238C49;
 }
 
-.erro {
+.SYerro {
     background-color: #06111F;
 }
 
-.meioCerto{
+.SYmeioCerto{
     background-color: #CB9D21;
 }
 
 
 
-.tentativa {
+.SYtentativa {
     margin: 0px auto;
     background-color: #0A1B2D;
     border: 3px solid #051222;
@@ -110,7 +110,7 @@ header {
     gap: 0px;
 }
 
-.among{
+.SYamong{
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -119,14 +119,14 @@ header {
     text-align: left;
 }
 
-.among img{
+.SYamong img{
     height: 180px;
     width: auto;
     position: static;
 }
 
 
-.among p {
+.SYamong p {
     color: #9FB5C9;
     width: 100%;
     text-align: right;
@@ -134,7 +134,7 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.num {
+.SYnum {
     color: #238E4B;
     font-weight: bold;
     font-size: 54px;
@@ -143,7 +143,7 @@ header {
 }
 
 
-.btnReiniciar{
+.SYbtnReiniciar{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -161,7 +161,7 @@ header {
 
 
 
-.btnReiniciar:hover {
+.SYbtnReiniciar:hover {
     background-image: url(./assets/img-03.png);
 }
 
@@ -245,8 +245,7 @@ header {
 .SYconteiter2 h1{
     color: #DE0000;
 }
-
-@media (max-width: 408px) {
+@media (max-width: 540px) {
     header {
         flex-direction: column;
         justify-content: center;
@@ -255,56 +254,57 @@ header {
         position: relative;
     }
 
-    .among img {
-        height: 165px;
+    .SYamong img {
+        height: 130px;
         position: static;
     }
-    .among {
+    .SYamong {
         justify-content: center;
-        max-width: 100%;
-
+        margin: 0 auto;
     }
 
-    .among p {
+    .SYamong p {
         text-align: center;
     }
 
-    .tentativa {
-        margin: 10px auto;
+    .SYtentativa {
+        margin: 10px auto ;
+        width: 160px;
+        height: 100px;
     }
 
-    .btnReiniciar {
+    .SYbtnReiniciar {
         top: 10px;
         right: 10px;
     }
 
-    .acerteSenha {
+    .SYacerteSenha {
         width: 395px; 
         max-width: 300px;
         margin: 20px auto;
         padding: 8px;
         gap: 4px;
     }
-    .quadrado {
+    .SYquadrado {
         width: 52px;
         height: 52px;
         font-size: 26px;
     }
 
-    .inputText {
+    .SYinputText {
         width: 100%;
         height: 38px;
         font-size: 18px;
     }
 
-    .btnEnviar {
+    .SYbtnEnviar {
         width: 100%;
         height: 32px;
         font-size: 15px;
     }
 
-    .inputText,
-    .btnEnviar {
+    .SYinputText,
+    .SYbtnEnviar {
         width: 100%;
     }
 
@@ -324,16 +324,9 @@ header {
     }
 
     .SYconteiter1 h1{
-        color: #00C0DD;
-        font-size: 3000px;
+        font-size: 100px;
     }
     .SYconteiter2 h1{
-        color: #DE0000;
-    }
-}
-
-@media (max-width: 300px) {
-    .among {
-        max-width: 200px;
+        font-size: 100px;
     }
 }
