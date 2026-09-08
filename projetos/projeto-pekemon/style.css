@@ -1,21 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
-.card {
-    margin: 48px;
-    border-radius: 15px;
-    background-color: #FFD900;
-    padding: 10px;
+
+
+.fora {
+    background-color: #ffe600;
+    margin: 40px;
     width: 300px;
+    padding: 10px;
+    border-radius: 15px;
 }
 h2 {
     text-align: center;
     margin: 10px 0px;
 }
-.card-botton {
-    background-color: #FAE25B;
+.dentro {
+    background-color: #bbae36;
     padding: 10px;
     border-radius: 10px;
+}
+.texto {
+    text-align: center;
+    color: #a89b22;
+    margin-top: 10px;
 }
