@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card {
+    margin: 48px;
+    border-radius: 15px;
+    background-color: #FFD900;
+    padding: 10px;
+    width: 300px;
+}
+h2 {
+    text-align: center;
+    margin: 10px 0px;
+}
+.card-botton {
+    background-color: #FAE25B;
+    padding: 10px;
+    border-radius: 10px;
+}

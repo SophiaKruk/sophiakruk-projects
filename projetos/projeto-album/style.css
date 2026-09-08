@@ -1,0 +1,22 @@
+body {
+    background-color: blueviolet;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 140px;
+}
+.album {
+    background-image: url(./assets/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}

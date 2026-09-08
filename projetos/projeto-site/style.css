@@ -1,0 +1,26 @@
+.cima {
+    background-color: rgb(206, 206, 255);
+}
+.linha {
+    height: 30px;
+    background-color: blueviolet;
+}
+h1 {
+    color: aliceblue;
+}
+.branco {
+    background-color: aliceblue;
+}
+.p {
+    text-align: left;
+    line-height: center;
+}
+.final {
+    background-color: blueviolet;
+}
+h3 {
+    color: aliceblue;
+}
+span {
+    color: crimson;
+}

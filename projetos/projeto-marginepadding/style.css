@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(253, 205, 241);
+}
+.nome {
+    color: blueviolet;
+}
+.primeiro {
+   background-color: rgb(202, 17, 17);
+    padding: 30px;
+}
+h3 {
+    color: aliceblue;
+}
+
+.segundo {
+    background-color: blueviolet;
+    margin: 30px;
+}
+.terceiro {
+    margin: 20px;
+    padding: 20px;
+    background-color: orange;
+}

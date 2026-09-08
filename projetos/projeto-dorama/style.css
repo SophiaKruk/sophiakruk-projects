@@ -1,0 +1,53 @@
+body {
+    background-color: pink;
+}
+h1 {
+    text-align: center;
+    color: #6A1B9A;
+}
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+.pad-1 {
+    border: 1px solid #6A1B9A;
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url("./assets/img1.png");
+}
+.pad-2 {
+    border: 1px solid #6A1B9A;
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(./assets/img3.png);
+    background-repeat: no-repeat;
+}
+.pad-3 {
+    border: 1px solid #6A1B9A;
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(./assets/img2\(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pad-4 {
+    border: 1px solid #6A1B9A;
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(./assets/img4.png);
+    background-size: cover;
+    background-position: center;
+}
+.pad-5 {
+    border: 1px solid #6A1B9A;
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(./assets/img5.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
